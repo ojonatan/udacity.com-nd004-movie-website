@@ -15,14 +15,9 @@ Richard O'Dwyer's [imdb-pie](https://github.com/richardasaurus/imdb-pie) module 
 
 `pip install imdbpie`
 
-## Content
+## Files included
 
-* `add_movie_imdb.py (md5: b03489a39b613417adb18d13b1b112bc)`
-* `entertainment_center.py (md5: 94c2fa87ea1cf9292549b99e8464063a)`
-* `fresh_tomatoes.py (md5: 28aa98f81a41f074eb61ba049766108b)`
-* `media.py (md5: 492cae2ce878f9a211938c744b8d3370)`
-* `settings.py (md5: 242db21f98871a28a402a185b280981e)`
-* `settings.py-example (md5: e7a93e2d9736eceeab155c0568e89a28)`
+{files}
 
 ## Installation
 
@@ -55,7 +50,7 @@ Richard O'Dwyer's [imdb-pie](https://github.com/richardasaurus/imdb-pie) module 
 
 MIT License
 
-Copyright (c) 2017 Oliver Schleede
+Copyright (c) {year} Oliver Schleede
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -77,4 +72,4 @@ SOFTWARE.
 
 ## Verison
 
-2017-02-20T12:41:47.205000
+{genrated}
