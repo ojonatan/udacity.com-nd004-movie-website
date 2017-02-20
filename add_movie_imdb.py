@@ -8,7 +8,7 @@ import sys
 import os
 if len(sys.argv) < 2:
     print "Please specify at least the IMDb ID of the desired movie."
-    quit()
+    exit(1)
 
 path = ""
 if os.path.dirname(__file__):
@@ -38,7 +38,7 @@ imdb_id = ""
 if len(settings.wemakesites_api_key) < 20:
     print """Are you sure that the api key placed in the settings is valid? Mine reads like
 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"""
-    exit(1)
+    exit(2)
 
 if len(sys.argv) < 2:
     print "Please specify at least the IMDb ID of the desired movie."
@@ -50,7 +50,7 @@ if len(sys.argv) > 1:
         print "Adding video " + imdb_id
     else:
         print "IMDB ID invalid: " + sys.argv[1]
-        exit(2)
+        exit(3)
         
 if len(sys.argv) == 3:
     if Movie.validate_youtube(sys.argv[2]):
@@ -58,7 +58,7 @@ if len(sys.argv) == 3:
         print "Adding with trailer!"
     else:
         print "YouTube Trailer invalid: " + sys.argv[2]
-        exit(3)
+        exit(4)
 
 Movie.set_api_key(settings.wemakesites_api_key)
 Movie.add_from_imdb(imdb_id, youtube_id)

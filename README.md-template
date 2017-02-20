@@ -23,7 +23,8 @@ Richard O'Dwyer's [imdb-pie](https://github.com/richardasaurus/imdb-pie) module 
 
 * Copy all files included to a new folder
 * Obtain an API key for the IMDB inofficial API used. It's free: http://imdb.wemakesites.net/
-* Paste that key under `wemakesites_api_key` in the file `settings.py`
+* Either copy or rename `settings.py-example` to `settings.py`.
+* Paste that API key under `wemakesites_api_key` in the file `settings.py`
 
 ## Usage
 

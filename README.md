@@ -17,18 +17,19 @@ Richard O'Dwyer's [imdb-pie](https://github.com/richardasaurus/imdb-pie) module 
 
 ## Files included
 
-* `add_movie_imdb.py (md5: 8ee87d90db839d257dbf821dd3e4c32a)`
-* `entertainment_center.py (md5: 741d254d2b812f106794cc19dabd0436)`
-* `fresh_tomatoes.py (md5: 30476c926e9cbcb40806ff24f8c2a7c0)`
-* `media.py (md5: c00604f909ed6fb644388772585105eb)`
-* `settings.py (md5: 3a00c18dc4002c8de2bfc05db15ffb61)`
-* `settings.py-example (md5: 018cb7aed726e5b35582d5cdb641a216)`
+* `add_movie_imdb.py (md5: 9259ba5598b61ba2dc5b654fd409ae7c)`
+* `entertainment_center.py (md5: 6f590d2528117ce9cbac7205c6ef252c)`
+* `fresh_tomatoes.py (md5: 35fbf6928d44ec69b253dc774a7c8fa7)`
+* `media.py (md5: 373c6553d180325998bcbbd115ba9ad7)`
+* `settings.py (md5: 1c96516c9ee7d1db1199ea3b0ad018f5)`
+* `settings.py-example (md5: eadcad555a6a73d883e1f03cce2f5bb3)`
 
 ## Installation
 
 * Copy all files included to a new folder
 * Obtain an API key for the IMDB inofficial API used. It's free: http://imdb.wemakesites.net/
-* Paste that key under `wemakesites_api_key` in the file `settings.py`
+* Either copy or rename `settings.py-example` to `settings.py`.
+* Paste that API key under `wemakesites_api_key` in the file `settings.py`
 
 ## Usage
 
@@ -76,4 +77,4 @@ SOFTWARE.
 
 ## Verison
 
-2017-02-20T17:29:27.779000
+2017-02-20T19:41:59.421000
