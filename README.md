@@ -15,21 +15,20 @@ Richard O'Dwyer's [imdb-pie](https://github.com/richardasaurus/imdb-pie) module 
 
 `pip install imdbpie`
 
-## Content
+## Files included
 
-* `add_movie_imdb.py (md5: b03489a39b613417adb18d13b1b112bc)`
-* `entertainment_center.py (md5: 94c2fa87ea1cf9292549b99e8464063a)`
-* `fresh_tomatoes.py (md5: 28aa98f81a41f074eb61ba049766108b)`
-* `media.py (md5: 492cae2ce878f9a211938c744b8d3370)`
-* `settings.py (md5: 242db21f98871a28a402a185b280981e)`
-* `settings.py-example (md5: e7a93e2d9736eceeab155c0568e89a28)`
+* `add_movie_imdb.py (md5: 8ee87d90db839d257dbf821dd3e4c32a)`
+* `entertainment_center.py (md5: 741d254d2b812f106794cc19dabd0436)`
+* `fresh_tomatoes.py (md5: 30476c926e9cbcb40806ff24f8c2a7c0)`
+* `media.py (md5: c00604f909ed6fb644388772585105eb)`
+* `settings.py (md5: 3a00c18dc4002c8de2bfc05db15ffb61)`
+* `settings.py-example (md5: 018cb7aed726e5b35582d5cdb641a216)`
 
 ## Installation
 
-* Copy all files to a new folder
+* Copy all files included to a new folder
 * Obtain an API key for the IMDB inofficial API used. It's free: http://imdb.wemakesites.net/
-* Paste that key in the settings.py
-* Run `python entertainment_center.py` to generate and view my recommendations	
+* Paste that key under `wemakesites_api_key` in the file `settings.py`
 
 ## Usage
 
@@ -77,4 +76,4 @@ SOFTWARE.
 
 ## Verison
 
-2017-02-20T12:41:47.205000
+2017-02-20T17:29:27.779000

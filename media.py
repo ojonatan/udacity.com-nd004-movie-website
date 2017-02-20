@@ -6,7 +6,7 @@ import json
 from imdbpie import Imdb
 
 class Movie():
-    """Movie object storing detailed information and related media
+    """Movie object storing detailed information and related media links
 
     Parameters
     ----------
@@ -72,17 +72,17 @@ class Movie():
         
         @return list 
         """
-        for root, dirs, filenames in os.walk(os.path.dirname(__file__) + "\\imdb"):
+        for root, dirs, filenames in os.walk(os.path.dirname(__file__) + "/imdb"):
             for file_name in filenames:
                 if file_name.find(".json") > 0:
-                    Movie.imdb_load_file(os.path.dirname(__file__) + "\\imdb\\" + file_name)
+                    Movie.imdb_load_file(os.path.dirname(__file__) + "/imdb/" + file_name)
         return Movie.__movies          
         
         
     @staticmethod
     def add_from_imdb(imdb_id, youtube_id):        
         """Retrieves movie data from the inofficial IMDb REST API as well as the IMDB lib imdbpie."""
-        file_name = os.path.dirname(__file__) + "\\imdb\\" + imdb_id + ".json"
+        file_name = os.path.dirname(__file__) + "/imdb/" + imdb_id + ".json"
         if not os.path.isdir(os.path.dirname(file_name)):
             os.mkdir(os.path.dirname(file_name))
 

@@ -21,10 +21,9 @@ Richard O'Dwyer's [imdb-pie](https://github.com/richardasaurus/imdb-pie) module 
 
 ## Installation
 
-* Copy all files to a new folder
+* Copy all files included to a new folder
 * Obtain an API key for the IMDB inofficial API used. It's free: http://imdb.wemakesites.net/
-* Paste that key in the settings.py
-* Run `python entertainment_center.py` to generate and view my recommendations	
+* Paste that key under `wemakesites_api_key` in the file `settings.py`
 
 ## Usage
 

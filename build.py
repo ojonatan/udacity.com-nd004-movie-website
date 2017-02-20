@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*
+
+"""Generating/updating project related files"""
+
 import hashlib
 import re
 import os
