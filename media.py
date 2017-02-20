@@ -4,6 +4,7 @@ import settings
 import os
 import json
 from imdbpie import Imdb
+from datetime import datetime
 
 class Movie():
     """Movie object storing detailed information and related media links
@@ -25,12 +26,14 @@ class Movie():
 
     __api_key = ""
     __movies = []
-    def __init__(self, title, storyline, image, trailer_url, genre):
+    def __init__(self, title, storyline, image, trailer_url, genre, released):
         self.title = title
         self.storyline = storyline
         self.poster_image_url = image
         self.trailer_youtube_url = trailer_url
         self.genre = genre
+        self.released = released
+        self.release_year = datetime.strptime(released, '%Y-%m-%d').year    
     
     @staticmethod
     def set_api_key(api_key):
@@ -62,7 +65,8 @@ class Movie():
                 imdb_save['description'],
                 imdb_save['image'],
                 "https://www.youtube.com/watch?v=" + imdb_save['youtube_id'],
-                imdb_save['genres']
+                imdb_save['genres'],
+                imdb_save['released']                
             )
         )
 

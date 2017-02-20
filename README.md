@@ -19,10 +19,10 @@ Richard O'Dwyer's [imdb-pie](https://github.com/richardasaurus/imdb-pie) module 
 
 * `add_movie_imdb.py (md5: 9259ba5598b61ba2dc5b654fd409ae7c)`
 * `entertainment_center.py (md5: 6f590d2528117ce9cbac7205c6ef252c)`
-* `fresh_tomatoes.py (md5: 35fbf6928d44ec69b253dc774a7c8fa7)`
-* `media.py (md5: 373c6553d180325998bcbbd115ba9ad7)`
-* `settings.py (md5: 1c96516c9ee7d1db1199ea3b0ad018f5)`
-* `settings.py-example (md5: eadcad555a6a73d883e1f03cce2f5bb3)`
+* `fresh_tomatoes.py (md5: 56fe7d1fc4a46f98159bfe4a7f329922)`
+* `media.py (md5: e87b4a7c0fa150cd1c1e588da3ac4253)`
+* `settings.py (md5: 889a70ab32074cb0567408a412d822b5)`
+* `settings.py-example (md5: e012d685bf6341622c7b2a5101a3ef22)`
 
 ## Installation
 
@@ -51,6 +51,32 @@ Richard O'Dwyer's [imdb-pie](https://github.com/richardasaurus/imdb-pie) module 
 
 `python add_movie_imdb.py tt1490017 fZ_JOBCLF-I`
 
+## Movies listed
+
+* Time Bandits (1981)
+* Dead Men Don't Wear Plaid (1982)
+* Tea in the Harem (1985)
+* L'oeil au beurre noir (1987)
+* A Fish Called Wanda (1988)
+* Meet the Feebles (1989)
+* The Gamblers (1990)
+* Pappa ante Portas (1991)
+* Happy Birthday, Türke! (1992)
+* Breakdown (1997)
+* Ghost Dog: The Way of the Samurai (1999)
+* Come Sweet Death (2000)
+* Grill Point (2002)
+* Kitchen Stories (2003)
+* Napoleon Dynamite (2004)
+* Match Point (2006)
+* Hot Fuzz (2007)
+* Oldboys (2009)
+* Four Lions (2010)
+* The Intouchables (2011)
+* The Croods (2013)
+* The Lego Movie (2014)
+* The Secret Life of Pets (2016)
+
 ## License
 
 MIT License
@@ -75,6 +101,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Verison
+## Version
 
-2017-02-20T19:41:59.421000
+2017-02-20T21:51:45.442000

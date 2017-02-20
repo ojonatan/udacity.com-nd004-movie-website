@@ -17,6 +17,19 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-color: #000;
+            color: #fff;
+        }
+        button
+        {
+            color: #000;
+        }
+        .navbar 
+        {
+            -moz-box-shadow: 0 0 5px #fff;
+            -webkit-box-shadow: 0 0 5px #fff;
+            box-shadow: 0 8px 30px #fff;
+        
         }
         @media screen and (min-width: 990px){
             h2
@@ -39,12 +52,26 @@ main_page_head = '''
             width: 100%;
             height: 100%;
         }
+        
+        .movie-tile:hover img
+        {
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        
+        .movie-tile:hover img
+        {
+            -moz-box-shadow: 0 0 5px #fff;
+            -webkit-box-shadow: 0 0 5px #fff;
+            box-shadow: 5px 5px 100px #fff, -5px -5px 100px #fff;
+        }
         .movie-tile {
+            border: 1px solid black;
             margin-bottom: 20px;
             padding-top: 20px;
+            padding-bottom: 20px;
         }
         .movie-tile:hover {
-            background-color: #EEE;
+            border: 1px solid white;
             cursor: pointer;
         }
         button.genre-filter
@@ -198,6 +225,7 @@ movie_tile_content = '''
     <div class="movie-cover" data-trailer-youtube-id="{trailer_youtube_id}" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
         <img src="{poster_image_url}" width="220" height="342">
         <h2>{movie_title}</h2>
+        <h3>{release_year}</h3>
     </div>
     <small>{genres}</small>
 </div>
@@ -250,7 +278,8 @@ def create_movie_tiles_content(movies):
             trailer_youtube_id=trailer_youtube_id,
             genres="".join(genre_links),
             genres_json=json.dumps(movie.genre),
-            genre_classes=" ".join(genre_classes)
+            genre_classes=" ".join(genre_classes),
+            release_year=movie.release_year
         )
     return content
 
