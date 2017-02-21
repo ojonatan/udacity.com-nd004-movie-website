@@ -6,24 +6,13 @@ Note: Every addition triggers the regenerations of the HTML file."""
 
 import sys
 import os
+import shared
+import settings
+
 if len(sys.argv) < 2:
     print "Please specify at least the IMDb ID of the desired movie."
     exit(1)
-
-path = ""
-if os.path.dirname(__file__):
-    path = os.path.dirname(__file__) + "/"
-    
-if not os.path.isfile(path + "settings.py"):
-    if os.path.isfile(path + "settings.py-example"):
-        settings = open(path + "settings.py", "w+")
-        settings.write(open(path + "settings.py-example").read())
-        settings.close()
-    else:
-        print "File settings.py could not be found."
-        quit()
         
-import settings
 from media import Movie
 
 youtube_id = ""

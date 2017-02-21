@@ -17,12 +17,13 @@ Richard O'Dwyer's [imdb-pie](https://github.com/richardasaurus/imdb-pie) module 
 
 ## Files included
 
-* `add_movie_imdb.py (md5: 9259ba5598b61ba2dc5b654fd409ae7c)`
-* `entertainment_center.py (md5: 6f590d2528117ce9cbac7205c6ef252c)`
-* `fresh_tomatoes.py (md5: 56fe7d1fc4a46f98159bfe4a7f329922)`
-* `media.py (md5: e87b4a7c0fa150cd1c1e588da3ac4253)`
-* `settings.py (md5: 889a70ab32074cb0567408a412d822b5)`
-* `settings.py-example (md5: e012d685bf6341622c7b2a5101a3ef22)`
+* `add_movie_imdb.py (md5: 66cb9354ed88319b3fadc653d18265ba)`
+* `entertainment_center.py (md5: d1f286b143c9d6dee747006163436b88)`
+* `fresh_tomatoes.py (md5: 603a66d770faaa4a8acc03f5eedb85e7)`
+* `media.py (md5: a931bac9b4fe4e4ffe435bf124c76362)`
+* `shared.py (md5: c4604b0facd18cbb1dc69dd8e4b7ab4b)`
+* `settings.py (md5: e7327ecf3506ce403bf757c88e145f0e)`
+* `settings.py-example (md5: d0a12726eefcac7ed7537f1cbffbf6db)`
 
 ## Installation
 
@@ -103,4 +104,4 @@ SOFTWARE.
 
 ## Version
 
-2017-02-20T21:51:45.442000
+2017-02-21T10:13:33.009000

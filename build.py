@@ -16,6 +16,7 @@ files = [
     'entertainment_center.py',
     'fresh_tomatoes.py',
     'media.py',
+    'shared.py',
     'settings.py',
     'settings.py-example'
 ]

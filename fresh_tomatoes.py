@@ -1,13 +1,21 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*
+
 import webbrowser
 import os
 import re
 import json
 
-# Styles and scripting for the page
+
+# The very top of the page
 main_page_head = '''
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>{page_title}</title>
+'''
+
+# Styles and scripting for the page (no interpolation)
+main_page_css_js = '''
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -55,7 +63,7 @@ main_page_head = '''
         
         .movie-tile:hover img
         {
-            transition: box-shadow 0.3s ease-in-out;
+            transition: box-shadow 0.1s ease-in-out;
         }
         
         .movie-tile:hover img
@@ -199,7 +207,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">{page_title}</a>
             <div class="navbar-genres">
             {movie_genres} <label><input type="checkbox" id="genre-filter-combine" value="1" /> Movie must match all selected genres</label>
             </div>
@@ -283,18 +291,24 @@ def create_movie_tiles_content(movies):
         )
     return content
 
-def open_movies_page(movies):
+def open_movies_page(movies, page_title):
   # Create or overwrite the output file
   output_file = open('fresh_tomatoes.html', 'w')
 
   # Replace the placeholder for the movie tiles with the actual dynamically generated content
   rendered_content = main_page_content.format(
     movie_tiles=create_movie_tiles_content(movies),
-    movie_genres=create_movie_genres_content(movies)
+    movie_genres=create_movie_genres_content(movies),
+    page_title=page_title
+  )
+
+  # Apply page title to header
+  rendered_head = main_page_head.format(
+    page_title=page_title
   )
 
   # Output the file
-  output_file.write(main_page_head + rendered_content)
+  output_file.write(rendered_head + main_page_css_js + rendered_content)
   output_file.close()
 
   # open the output file in the browser

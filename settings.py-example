@@ -1,2 +1,4 @@
+# -*- coding: utf-8 -*
 # Obtain api key here: http://imdb.wemakesites.net/
 wemakesites_api_key=""
+page_title=u"Oliver's international movie recommendations"
